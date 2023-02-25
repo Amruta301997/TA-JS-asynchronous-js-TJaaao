@@ -8,6 +8,11 @@ setTimeout(() => console.log('Second'), 0);
 console.log('Third');
 ```
 
+output-
+first
+third
+second
+
 2.
 
 ```js
@@ -66,7 +71,7 @@ console.log('Third');
 
 ```js
 console.log('one');
-console.log('two');
+setTimeout(() => console.log('two'), 10);
 console.log('three');
 ```
 
@@ -74,7 +79,7 @@ console.log('three');
 
 ```js
 console.log('one');
-console.log('two');
+setTimeout(() => console.log('two'), 0);
 console.log('three');
 ```
 
@@ -108,6 +113,6 @@ Convert the code below in such way that the output should be the one below
 
 ```js
 console.log('First Call');
-[1, 2, 3, 4, 5].firEach((num) => console.log(num));
+[1, 2, 3, 4, 5].forEach((num) => console.log(num));
 console.log('Last Call');
 ```
